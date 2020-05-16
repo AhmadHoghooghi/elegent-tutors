@@ -100,3 +100,32 @@ I hate it.
 I like it.
 
 I hate it.
+
+
+remove dogs with dw and repeat command with dot.
+cat cat cat cat cat cat cat dog.
+
+remove cats with dd for first time and . for the others.
+cat
+dog
+dog
+cat
+cat
+dog
+cat
+bird
+cat
+dog
+dog
+cat
+
+activate line numbers with :set number and go to lines ordinaly to on C A T A N D B I R D.
+A
+B
+C
+D
+I
+N
+R
+T
+
