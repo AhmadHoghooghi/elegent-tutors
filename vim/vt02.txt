@@ -1,0 +1,83 @@
+Go to matching ([{}]) with %.
+( { [ ] } )
+
+Activate and diactivate numers with :set number or nu.
+Activate and diactivate autoindent with :set autoinden or ai, also activate :set smartindent.
+Change colorscheme with :colorschemeActivate paste mode with :set paste
+
+Split horizentally with :split or CTRL-W_s
+Split vertically with :vsplit or CTRL-W_v
+Move split size vertically with CTRL-W n+ and CTRL-W n-
+Move split size horizentally with CTRL-W n> and CTRL-W n<
+Max out the height of the current split with ctrl + w _
+Max out the width of the current split with ctrl + w |
+Normalize splits with ctrl-W =
+
+Run os commands with !command in command mode. run ls and pwd.
+Run os commands and insert result to file with !! in normal mode.
+Note it is shown in command mode like :.!
+insert output of pwd here:
+
+
+two ways to open files in different buffers are with:
+vim fileA fileB
+
+Open a new file with :edit fileName or :e in current window.
+Open a new file with :vsplit filename in new splitted window.
+
+See buffer lists with :ls
+Go to next buffer with :bn :bnext
+Go to previous buffer with :bprevious or :bp
+Go to a buffer with its name or number with :buffer or :b nameOrNumber
+Delete buffer with :bdelete or :bd. It will fail if it is edited unless you use :bd! or write it with :w and then delete.
+
+Substitute first occurance of dog with cat. use :s/old/new
+This is a dog. I like dogs.
+Repeat last command-line command with @: command.
+
+Substitute all occurances in line. use /g
+This is a dog. I like dogs.
+
+Substitute in range of lines. use a,bs: substitute all occurances unles first and last line.
+
+This is a dog. I like dogs.
+This is a dog. I like dogs.
+This is a dog. I like dogs.
+This is a dog. I like dogs.
+
+Substitute ignoring case: use /i flag.
+This is a dog. I like dogs. Dogs are funny.
+
+Substitute with confirm. use /c flag.
+This is a dog. I like dogs.
+
+Substitute all occurances in file. use %
+I like caats. caats are fun.
+
+Navigation in help. use CTRL-] to jump to the definition of keyword under the cursor. 
+Use CTRL-T to jump to older entry in tag liest.
+Use :tags to see tag list.
+
+== jump-motions
+A "jump" is a command that normally moves the cursor several lines away.
+Following commands are "jump" commands: "'", "`", "G", "/", "?", "n", "N", "%", "(", ")", "[[", "]]", "{", "}", ":s", ":tag", "L", "M", "H".
+
+Return to last position with the "''" and "``" commands.
+
+See jump lists with :jumps or :ju
+Go to Older curson position with CTRL-O (not motion command)
+Go to Newer cursor position with CTRL-I (not motion command)
+
+
+After using f{character}:
+Go to Next occurrence with ;
+Go to previous occurence with ,
+
+use w and b to go forward and backward.
+use e and ge to go forward and backward.
+
+use j and k with numbers to go forward and backward.
+use l and h with numbers to go forward and backward.
+
+use L M H and '' and `` to go forward and backward.
+Mind scrolloff may have value other than zero.

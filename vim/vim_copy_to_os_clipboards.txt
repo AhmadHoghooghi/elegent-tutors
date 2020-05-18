@@ -1,0 +1,20 @@
+to be able to register to os clipboards from vim, vim should be compiled with feature called clipboard. to check it run command below and assure clipboard has + sign next to it.
+
+vim --version | grep clipboard.
+
+or run this command inside vim:
+:echo has('clipboard')
+
+fedoras default vim does not have this feature, so I removed it and installed xvim.
+
+There are two registers that are synced with Os clipboards
+"* is synced with Os primary clipboard (called x11-selection) (wchich is field with selection and can be accessed with mouse middle key. (or "*p in vim)
+
+"+ which is CLIPBOARD and is filled with ctrl-c or ctrl-x and can be accessed with ctrl-v in os (or "+p in vim)
+
+in a vim with clipboard feature,
+
+register to x11-selection with "*y and paste with "*p
+register to os clipboard with "+y and paste with "+p in other vim or ctrl-c in other window
+
+
