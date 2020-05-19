@@ -73,6 +73,8 @@ After using f{character}:
 Go to Next occurrence with ;
 Go to previous occurence with ,
 
+Print file name, cursor position and file status with CTRL-G.
+
 use w and b to go forward and backward.
 use e and ge to go forward and backward.
 
@@ -81,3 +83,34 @@ use l and h with numbers to go forward and backward.
 
 use L M H and '' and `` to go forward and backward.
 Mind scrolloff may have value other than zero.
+
+put this line in middle of page with zz.
+
+Move screen up (lines down) using CTRL-Y
+Move screen down (lines up) using CTRL-E
+
+(remember in insert mode ctrl-e and ctrl y action)
+
+up mimic below. (CTRL-Y)
+
+
+down mimic above. (CTRL-E)
+ 
+Scroll window upward half screen using CTRL-U.
+Scroll window downward half screen using CTRL-D.
+
+Page up with CTRL-B
+Page down with CTRL-F
+
+write content of block below to sample.txt. go to insert mode and use :w sample.txt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This is a cat. That is a Dog.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+write content of sample.txt below. use :read or :r filename
+
+execute command and write result below: :r !command (similar to !! according to docs)
+ls -ltrh result:
+
+

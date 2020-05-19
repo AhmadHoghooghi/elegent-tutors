@@ -1,0 +1,73 @@
+Go to visual mode and select words in uppercase. Use v.
+this is a cat. THAT IS A DOG.
+THIS IS A CAT. THAT IS A DOG.
+THIS IS A CAT. that is a dog.
+
+Go to visual mode and select all three linse. Use V for line-select.
+This is cat. That is a dog.
+This is cat. That is a dog.
+This is cat. That is a dog.
+
+Go to visual-block mode with CTRL-v. select second sentences.
+This is cat. That is a dog.
+This is cat. That is a dog.
+This is cat. That is a dog.
+
+Select the word you like most. (vaw)
+cat dog
+
+Select the sentence you like most. (vas)
+I like cats. I like dogs.
+
+Select the paragraph you like most. (vap)
+I like cats. They are fun.
+I like dogs. They are fun.
+
+Select what is important in next lines and its enclosing punctuation.
+replace all of them with IMPORTANT.
+select <important> part.
+select 'important' part.
+select "important" part.
+select {important} part.
+select [important] part.
+select (important) part.
+select <h1>important</h1> part.
+
+Select what is important in next lines. Ignore enclosing punctuation or tag.
+Replace content with IMPORTATN.
+select <important> part.
+select 'important' part.
+select "important" part.
+select {important} part.
+select [important] part.
+select (important) part.
+select <h1>important</h1> part.
+
+Note that text-objects with a and i are also awailable in nomral mode for d(delete) and c(change)
+
+Replace double quote and its content with important.
+This is "NOT IMPORTATN".
+
+Remove part that you dont like. (use 'da(')
+I like cats(and dogs).
+
+There are to ways to go from visualmode to insermode;
+
+Indent line below in visual mode. use S->
+Indent me please :)).
+
+Indent lines below in visual mode.
+Indent us please :)).
+Indent us please :)).
+
+Un-indent line below in visual mode. Use S-<
+	Un-indent me please. :)).
+
+Un-indent lines below in visual mode.
+	Un-indent me please. :)).
+	Un-indent me please. :)).
+	
+remove selected part and go to insert mode with c.
+Cats are NOT good.
+
+Go to normal mode with <ESC> or CTRL-[

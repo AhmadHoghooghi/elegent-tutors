@@ -22,9 +22,10 @@ use $ and ^.
 
 
 Use ^ and $. then use 0 and $. move around block. ^ first non-blank character and 0 first character of line.
-        This is a cat. That is a dog.
-	This is a cat. That is a dog.
-	This is a cat. That is a dog.
+g_ goes to last non blank caracter of the line.
+        This is a cat. That is a dog.    
+	This is a cat. That is a dog.    
+	This is a cat. That is a dog.    
 
 == insert and append
 use i to insert. use a to append. Use w for motion and fix typos. exit insert mode using ctrl-[.
